@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+</head>
+<body>
+    <button id="tempButton">Obtener último dato</button>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById("tempButton").addEventListener("click", function() {
+            fetch("/temp")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("result").innerText = data;
+                });
+        });
+    </script>
+</body>
+</html>

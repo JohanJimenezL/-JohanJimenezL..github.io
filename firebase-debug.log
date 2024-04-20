@@ -1,0 +1,42 @@
+[debug] [2024-04-19T23:53:11.191Z] ----------------------------------------------------------------------
+[debug] [2024-04-19T23:53:11.194Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\johan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-04-19T23:53:11.194Z] CLI Version:   13.7.3
+[debug] [2024-04-19T23:53:11.194Z] Platform:      win32
+[debug] [2024-04-19T23:53:11.195Z] Node Version:  v20.12.2
+[debug] [2024-04-19T23:53:11.195Z] Time:          Fri Apr 19 2024 17:53:11 GMT-0600 (hora estándar central)
+[debug] [2024-04-19T23:53:11.195Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-19T23:53:11.310Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-19T23:53:11.310Z] > authorizing via signed-in user (johanelpro105@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2024-04-19T23:53:11.320Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-19T23:53:11.320Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-19T23:53:11.320Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-04-19T23:53:11.327Z] [hub] writing locator at C:\Users\johan\AppData\Local\Temp\hub-masm-289bb.json
+[debug] [2024-04-19T23:53:11.345Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/masm-289bb/sites 
+[debug] [2024-04-19T23:53:11.910Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/masm-289bb/sites 200
+[debug] [2024-04-19T23:53:11.910Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/masm-289bb/sites {"sites":[{"name":"projects/masm-289bb/sites/masm-289bb","defaultUrl":"https://masm-289bb.web.app","appId":"1:281309744253:web:a0d8bc575ca32a17a03514","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-19T23:53:11.910Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/masm-289bb/webApps/1:281309744253:web:a0d8bc575ca32a17a03514/config [none]
+[debug] [2024-04-19T23:53:12.612Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/masm-289bb/webApps/1:281309744253:web:a0d8bc575ca32a17a03514/config 200
+[debug] [2024-04-19T23:53:12.612Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/masm-289bb/webApps/1:281309744253:web:a0d8bc575ca32a17a03514/config {"projectId":"masm-289bb","appId":"1:281309744253:web:a0d8bc575ca32a17a03514","databaseURL":"https://masm-289bb-default-rtdb.firebaseio.com","storageBucket":"masm-289bb.appspot.com","apiKey":"AIzaSyDfZNs6sF3G1roux_IVpydVaTSeMYrkdlc","authDomain":"masm-289bb.firebaseapp.com","messagingSenderId":"281309744253","measurementId":"G-7H01RNEHW0"}
+[debug] [2024-04-19T23:53:12.626Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/masm-289bb [none]
+[debug] [2024-04-19T23:53:12.876Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/masm-289bb 200
+[debug] [2024-04-19T23:53:12.876Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/masm-289bb {"projectId":"masm-289bb","projectNumber":"281309744253","displayName":"MASM","name":"projects/masm-289bb","resources":{"hostingSite":"masm-289bb","realtimeDatabaseInstance":"masm-289bb-default-rtdb"},"state":"ACTIVE","etag":"1_3e4f0f76-5765-4f7a-87ab-d01c8ab53b8e"}
+[info] i  hosting[masm-289bb]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[masm-289bb]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
